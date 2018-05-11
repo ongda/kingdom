@@ -13,16 +13,50 @@
 	<a-marker preset="kanji">
 		
 
-			
-			
-		<!--knight-->
-		<a-gltf-model 
-			src="/test/models/low_poly_knight_animated/scene.gltf" 
-			position="0 0.5 0" 
+				<!--book-->
+			<a-gltf-model 
+			src="/test/models/medieval_fantasy_book/scene.gltf" 
+			position="0 0 0" 
 			rotation="0 0 0" 
-			scale="0.5 0.5 0.5" 
+			scale="0.05 0.05 0.05"> 
+			</a-gltf-model>
+			
+		<!--sky castle-->
+			<a-gltf-model 
+			src="/test/models/stylised_sky_player_home_dioroma/scene.gltf" 
+			position="4 0.5 -3.5" 
+			rotation="0 0 0" 
+			scale="0.02 0.02 0.02" 
 			animation-mixer="loop:repeat;repetitions:infinity"> 
 			</a-gltf-model>
+			
+		<!--red dragon-->
+		<a-gltf-model 
+			src="/test/models/dreamword_small_red_dragon/scene.gltf" 
+			position="-1.2 1 -0.5" 
+			rotation="45 90 0" 
+			scale="0.0055 0.0055 0.0055" 
+			animation-mixer="loop:repeat;repetitions:infinity">
+			
+			<a-animation attribute="rotation"
+				   dur="10000"
+				   fill="forwards"
+				   ease="linear"
+				   to="45 450 0"
+				   repeat="indefinite">
+				</a-animation>
+			
+		</a-gltf-model>
+		
+		<!--lil brother dragon-->
+			<a-gltf-model 
+			src="/test/models/low-poly_dragon_cub_downloadable/scene.gltf" 
+			position="0.6 0.05 1.65" 
+			rotation="0 270 0" 
+			scale="0.2 0.2 0.2" 
+			animation-mixer="loop:repeat;repetitions:infinity"> 
+			</a-gltf-model>
+
 
 
   	</a-marker>
